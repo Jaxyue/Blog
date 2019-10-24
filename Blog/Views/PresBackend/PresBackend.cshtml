@@ -1,0 +1,122 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>个人管理平台</title>
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/presblog.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/fontAwesome.css">
+ 
+</head>
+<body>
+    <div id="Main">
+        <div id="left">
+            <div id="lHeader">
+                <div id="Logo">LIFE&nbsp;<span>TRAVEL</span></div>
+            </div>
+            <div id="lCenter">
+
+            </div>
+            <div id="lBottom">
+                <p>Copyright &copy; 2019 Company Name .Design: The Life Travelling</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="mx-auto text-left">
+                <h2>
+                    标题管理
+                </h2>
+                <table class="table table-striped" id="tTb">
+                </table>
+            </div>
+            <div class="gallery" id="pic">
+                <div class="Projects">
+                    <div class="title"><h3>相册管理</h3></div>
+                    <table class="table table-striped" id="pTb">
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="news" id="news">
+
+                <div class="Ntitle"><h3>日记管理</h3></div>
+                <table class="table table-striped" id="nTb">
+                </table>
+
+            </div>
+
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+    <hr />
+
+
+    <div class="modal fade" id="tModi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">标题修改</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">标题</label>
+                        <input type="email" class="form-control tText" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">换行后标题</label>
+                        <input type="email" class="form-control tText" id="exampleInputEmail1" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">内容</label>
+                        <input type="email" class="form-control tText" id="exampleInputEmail1" placeholder="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <input type="button" class="btn btn-primary" onclick="rModify()" value="修改"/>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/js/PresBackend.js"></script>
+    <script>
+        function rModify() {
+    var input = $(".tText");
+    var title = {
+        "Title": input[0].value,
+        "br": input[1].value,
+        "Text": input[2].value
+            }
+            var T = JSON.stringify(title);
+            console.log(input[0].value);
+    $.ajax({
+        type: "post",
+        url: "tUpdate",
+        data:T,
+        success: function (data) {
+            if (data) {
+                alert("修改成功!");
+                
+            }
+        },
+        error: function () { }
+    })
+}
+    </script>
+</body>
+</html>

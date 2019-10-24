@@ -1,0 +1,707 @@
+﻿@{
+    Layout = null;
+}
+
+
+@using Model
+@model  IEnumerable<hSlider>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Life Travelling</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/fontAwesome.css">
+    <link rel="stylesheet" href="../css/light-box.css">
+    <link rel="stylesheet" href="../css/owl-carousel.css">
+    <link rel="stylesheet" href="../css/templatemo-style.css">
+    <link href="~/css/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <script src="~/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+
+
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--/.navbar-header-->
+        <div id="main-nav" class="collapse navbar-collapse">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#projects">Recent Projects</a></li>
+                    <li><a href="#video">Presentation</a></li>
+                    <li><a href="#blog">Blog Entries</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="logo">
+            <a href="#">Life <em>travel</em></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#top">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#featured">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        逆旅
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        相册
+                    </a>
+                </li>
+                <li>
+                    <a href="#video">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="#blog">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        用户留言
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="rect"></span>
+                        <span class="circle"></span>
+                        联系我们
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="social-icons">
+            <li><a href="~/login/login"><i class="fa fa-qq"></i></a></li>
+            <li><a href="~/login/login"><i class="fa fa-weixin"></i></a></li>
+            <li><a href="~/login/login"><i class="fa fa-weibo"></i></a></li>
+
+        </ul>
+    </div>
+
+    <div class="slider">
+        @*头部轮播*@
+        <div class="Modern-Slider content-section" id="top">
+            @foreach (hSlider h in Model)
+            {
+                <div class="@h.item">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                            <div>
+                                <h1>@h.Etitle<br>@h.Ctitle</h1>
+                                <p>
+                                    @h.EPicdescribe
+                                    @*<a href="#" target="_blank">template</a> website.*@
+                                    <br>
+                                    @h.CPicdescribe
+                                </p>
+                                <div class="white-button button">
+                                    <a href="#featured">@h.Pbuttom</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+
+    <div class="page-content">
+        <section id="featured" class="content-section">
+            <div class="section-heading">
+                <h1>逆<br><em>旅</em></h1>
+                <p>
+                    Life is a retrograde journey
+
+                    <br>and I am also a pedestrian
+                </p>
+            </div>
+            <div class="section-content">
+                @*中部轮播*@
+
+
+
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_1.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有疼痛</h4>
+                            <span>因此 明智</span>
+                            <p>#1 那些离开你的人，无论当初是出于什么原因离开的，也许他犹豫过挣扎过不舍过，但至少在他决定要走的那一瞬间，他觉得没有你，他会过得更好。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_2.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有遗憾</h4>
+                            <span>因此 珍惜</span>
+                            <p>#2 有些人会一直刻在记忆里的，即使忘记了她的笑容，忘记了她的声音，忘记了她的脸，但每当想起她时的那种感受，是永远不会改变的。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_3.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有孤独</h4>
+                            <span>因此 坚韧</span>
+                            <p>#3 孤独两个字拆开，有孩童，有瓜果，有小犬，有蚊蝇，足以撑起一个盛夏傍晚的巷子口，人情味十足。稚儿擎瓜柳蓬下，细犬逐蝶深巷中。人间繁华多笑语，唯我空余两鬓风。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_4.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有失望</h4>
+                            <span>因此 热爱</span>
+                            <p>#4 远处的云雾轻拂过黛山，橘黄的日落点缀其间，有风经过，停在窗边。这些美好的事物在一瞬间通通向我奔来，嘱咐我要热爱这个世界。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_5.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有迷茫</h4>
+                            <span>因此 寻找</span>
+                            <p>#5 他孤单的寻找着那道身影，单纯的以为找到后就可以不在孤单，可是找到后却又不敢上前，无奈的他只能苦笑摇头，转身离开。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_6.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有疑惑</h4>
+                            <span>因此 纯粹</span>
+                            <p>#6 有一个夜晚，我烧毁了全部记忆，于是我的梦就透明了。有一个早晨，我扔掉所有的昨天，于是我的步子就轻盈了。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_7.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有冷漠</h4>
+                            <span>因此 炽热</span>
+                            <p>
+                                #7 我偏就是个骨子里住着风的行者，管他礼法束缚，人言可畏，山难水阻，我偏要去闯一遭。我偏是要以我肝胆照山河，祭我一生炽热。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_8.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有伪善</h4>
+                            <span>因此 纯真</span>
+                            <p>#8 在一瞬间，我以为我还是我，没有经历过悲伤，携带者最初的向往和执著，穿过季节，掠过高架，铺在山与海之间。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image">
+                            <img src="/img/featured_9.jpg" alt="" style="width:333px; height:550px;">
+                            <div class="featured-button button">
+                                <a href="#projects">Continue Reading</a>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h4>存有 质疑</h4>
+                            <span>因此 坚定</span>
+                            <p>#9 我啊，长到这么大，特别想回到过去，抱抱那个时候的自己，告诉他，那么多如洪水猛兽般的情绪，虽然不至于，但是我理解啊。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="content-section">
+
+            <div class="section-heading">
+                <h1>相<br><em>册</em></h1>
+                <p>
+                    Praesent pellentesque efficitur magna,
+                    <br>sed pellentesque neque malesuada vitae.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="masonry">
+                    <div class="row">
+
+                        <div class="Praesent">
+                            <div class="pImage">
+                                <img src="~/img/img-1.jpg" style="width:100%;height:100%" alt="" />
+                                <div class="text">
+                                    <span><h3>七堇年</h3>我渐渐承认，活着的价值，在于要有一个饱满的人生。隐忍平凡的外壳下，要像果实般有着汁甜水蜜的肉瓤，以及一颗坚硬闪亮的内核。这样的种子，才能在人间深处生根发芽，把一段富有情致的人生传奇流传下去。</span>
+
+                                </div>
+                            </div>
+                            <div class="pImage">
+                                <img src="~/img/img-2.jpg" style="width:100%;height:100%" alt="" />
+                                <div class="text">
+                                    <span><h3>少年朝食</h3>没有什么比粥跟温柔的了，念予毕生颠沛流离，就找不到一个似粥温柔的人。</span>
+                                </div>
+                            </div>
+                            <div class="pImage">
+                                <img src="~/img/img-3.jpg" style="width:100%;height:100%" alt="" />
+                                <div class="text">
+                                    <span><h3>记昨日书</h3>你且听这荒唐春秋走来一步步，你且同听这风浪永远二十赶朝暮。</span>
+                                </div>
+                            </div>
+                            <div class="pImage">
+                                <img src="~/img/img-4.jpg" style="width:100%;height:100%" alt=""/>
+                                <div class="text">
+                                    <span>
+                                        <h3>这世界与我</h3>我希望你读很多书，走很远的路。
+                                        我希望你爱很多人，也被很多人爱。
+
+                                        我希望你走过人山人海，也遍览山河湖海。
+
+                                        我希望你看纸质书，送手写的祝福。
+
+                                        我要你独立坚强温暖明亮，
+
+                                        我要你在这寡淡的世上，深情的活。
+                                    </span>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                            
+                        @*<div class="item">
+                                <div class="col-md-8">
+                                    <a href="~/img/portfolio_big_1.jpg" data-lightbox="image"><img src="~/img/portfolio_1.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="~/img/portfolio_big_2.jpg" data-lightbox="image"><img src="~/img/portfolio_2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="~/img/portfolio_big_3.jpg" data-lightbox="image"><img src="~/img/portfolio_3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="~/img/portfolio_big_4.jpg" data-lightbox="image"><img src="~/img/portfolio_4.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="~/img/portfolio_big_5.jpg" data-lightbox="image"><img src="~/img/portfolio_5.jpg" alt="image 5"></a>
+                                </div>
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h1>About   <em>loneliness</em></h1>
+                        <p>The word "loneliness" can be divided into children, melons and fruits, puppies and mosquitoes and flies, which is enough to support a midsummer evening Lane entrance, full of human feelings. </p>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            Under the greenhouse of young kid, the dog chases butterflies in the narrow lane, the world is full of laughter, but I have two spare temples.
+                        </p>
+                        <p>Children fruits, cats, dogs and flies are certainly busy, but they have nothing to do with you, which is called loneliness.</p>
+                    </div>
+                    <div class="accent-button button">
+                        <a href="#blog">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="box-video">
+                        <div class="bg-video" style="background-image: url(https://unsplash.imgix.net/photo-1425036458755-dc303a604201?fit=crop&fm=jpg&q=75&w=1000);">
+                            <div class="bt-play">Play</div>
+                        </div>
+                        <div class="video-container" style="height: 400px;">
+                            video
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="content-section">
+            <div class="section-heading">
+                <h1>用户<br><em>留言</em></h1>
+                <p>
+                    Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
+                    <br>Phasellus luctus odio eget dui imperdiet.
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="tabs-content">
+                    <div class="wrapper">
+                        <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                            <li><a href="#tab1" class="active">二零一八年&nbsp;&nbsp;九月</a></li>
+                            <li><a href="#tab2">二零一八年&nbsp;&nbsp;六月</a></li>
+                            <li><a href="#tab3">二零一八年&nbsp;&nbsp;三月</a></li>
+                            <li><a href="#tab4">二零一七年&nbsp;&nbsp;十二月</a></li>
+                        </ul>
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/1.jpg" width="306px" height="230px"; />
+                                            <div class="text-content">
+                                                <h4>要么孤独，要么庸俗</h4>
+                                                <span>九月 27,2018</span>
+                                                <p>22岁生日，一个人吃火锅，还好锅底可以点最辣的；187次路过的码头，4次遇到一对情侣，两个人眼中的风景，也不见得更好看；第6次一个人搬家，扔掉了3箱旧东西，很遗憾，好像连回忆也一并被丢弃了。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/2.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>说句再见吧，少年</h4>
+                                                <span>九月 20,2018</span>
+                                                <p>我的老家是长江流过的地方，上游与湖北接壤。我在那里度过了小学，初中，高中，十八岁提着直逼腰身的行李箱走了出来。现在，我回来了，城里的长途车站已经搬走到一个我没有听过的地方。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/3.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>像少年一样无赖，想中年一样去爱</h4>
+                                                <span>九月 15,2018</span>
+                                                <p>每一天落寞的阳光变成防腐剂，每一日沉睡的星空覆上保护膜，任何外界的干扰，都成为独自前进的坚定力量。而这种力量，历久弥新，终于成为你生命中不可或缺的一部分。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab2">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/4.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>以后的日子我们一起生活吧</h4>
+                                                <span>六月 30,2018</span>
+                                                <p>
+                                                    最好的告白不是”我养你”，也不是”嫁给我吧我爱你”，而是”以后的日子，我们一起生活吧。”我期待着成为更好的自己，期待着那个愿意给我真心和幸福的人。 同时，我也期待着他的那句：以后的日子，我们一起生活吧。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/5.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>婚礼和葬礼</h4>
+                                                <span>六月 15,2018</span>
+                                                <p>
+                                                    人生的两件大事——婚礼和葬礼，其实有很多共通点：主人家邀请的，都是同一批人，大家都要“做人情”。死者出殡前一天，亲人和挚友会留在灵堂，陪他度过入土为安前最后的一天。新郎结婚前一天，挚友会陪他度过自由身的最后一天。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/6.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>留白</h4>
+                                                <span>六月 10,2018</span>
+                                                <p>好的留白人生，一点就破，一参就透。提前老去是幸福的——如果还有一张年轻的容颜，那是上天所赐的福报。如《圣经》上所说，你们的一日是千年，而我是千年一日。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab3">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/7.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>怕不怕孤单？</h4>
+                                                <span>三月 15,2018</span>
+                                                <p>
+                                                    怕不怕孤单？从来不怕。一些可爱的女性是怕的，她们从父母的家直接搬到丈夫的家，数十年下来，家里花团锦簇，过惯了，一旦静下来，要了老命，故此不但旅行玩耍看戏吃茶这些要人陪
+                                                </p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/8.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>来年陌生的，是昨日最亲的某某</h4>
+                                                <span>三月 18,2018</span>
+                                                <p>比起最初对我笑的那一刻，有时会更加怀念你为我煮面的背影。时光流转回到写信的那一天，要是那一天什么都不说，是不是也能像那些彼此有好感的人们一样，忍着痛觉，把真心深藏着，继续做付出更多的另一方？</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/9.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>一件温柔的小事</h4>
+                                                <span>三月 3,2018</span>
+                                                <p>越来越多的人离开家乡，交通是越来越方便了，可回家的路，却怎么越走越长了？通信也越来越便捷了，可是，我们见面的时间怎么反而越来越少了？我们一起吃顿饭，怎么就变得越来越难了？</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab4">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/10.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>匠人</h4>
+                                                <span>十二月 28,2017</span>
+                                                <p>
+                                                    市井草根，各守摊位。来往帮衬的，都是附近社区的居民。穿摊过档，讨价还价，再寻常不过的市民生活。个中却有高手。光顾市场三四年，发现贩夫走卒中深藏两大匠人，一位是卖鱼仔，一位是收银妹。
+                                                </p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/11.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>可是，我依然没有遇见你</h4>
+                                                <span>十二月 12,2017</span>
+                                                <p>好像每个二十几岁的年轻女孩子都要有一个说出来像那么回事的梦想，否则显得我们头脑空空，胸小还无脑。据说这个阶段的梦想，是从学校出来进入婚姻前一个很好的过渡。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <img src="~/img/12.jpg" width="306px" height="230px" ; />
+                                            <div class="text-content">
+                                                <h4>写食</h4>
+                                                <span>十二月 2,2017</span>
+                                                <p>美好的食物绝对是有“灵魂”的，而美食“唤醒”的不仅仅只是我们的味蕾，而是那种瞬间能让我们落泪的东西。吃货们的理想，不过是走遍全世界，吃遍全天下的美食。我们为你搜罗了有关世界各地最具代表性的美食的电影，让你“面朝美食，胃口大开。</p>
+
+                                                <div class="accent-button button">
+                                                    <a href="#contact">Continue Reading</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+
+            <div id="contact-content">
+                <div class="section-heading">
+                    <h1>联系<br><em>我们</em></h1>
+                    <p>
+                        如果您有什么意见或建议
+                        <br>可以留下您的联系方式我们会尽快改进。
+                    </p>
+
+                </div>
+                <div class="section-content">
+                    <form id="contact" action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="您的姓名" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="您的电子邮件" required="">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="留言内容" required></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <input type="button"  class="mess" onclick="Mess()" value="留言"/>
+                                    @*<button  id="form-submit" class="btn" onclick="Mess()">留言</button>*@
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Copyright &copy; 2019 Company Name . Design: The Life Travelling</p>
+        </section>
+    </div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="~/js/vendor/bootstrap.min.js"></script>
+    <script src="~/js/index.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/index.js"></script>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../js/Index.js"></script>
+</body>
+</html>

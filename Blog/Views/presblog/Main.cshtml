@@ -1,0 +1,91 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Personal blog</title>
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/presblog.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/fontAwesome.css">
+
+</head>
+<body>
+    <div id="Main">
+        <div id="left">
+            <div id="lHeader">
+                <div id="Logo">LIFE&nbsp;<span>TRAVEL</span></div>
+            </div>
+            <div id="lCenter">
+                <ul>
+                    <li class="li">
+                        <a href="#top">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pic">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            相册
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#news">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            日记
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="lBottom">
+                <p>Copyright &copy; 2019 Company Name .Design: The Life Travelling</p>
+            </div>
+        </div>
+        <div id="right">
+            <div class="Title">
+                <a href="~/PresBackend/PresBackend" class="Manage">个人管理</a>
+
+            </div>
+            <div class="mx-auto text-left">
+                
+            </div>
+            <div class="gallery" id="pic">
+                <div class="Projects">
+                    <div class="title"><h3>My Album</h3></div>
+                    <div class="img-pro">
+                       
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+       
+            </div>
+            <div class="news" id="news">
+
+                <div class="Ntitle"><h3>My Diary</h3></div>
+                <div class="NewsBox">
+                
+                    @*<a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">The End</a>
+                    <div style="clear:both;"></div>*@
+                </div>
+                </div>
+            </div>
+        <div style="clear:both"></div>
+    </div>
+    <hr />
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    
+    <script src="~/js/Mblog.js"></script>
+</body>
+</html>

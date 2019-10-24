@@ -1,0 +1,11 @@
+D:\Vs2019 File\Blog\BLL\bin\Debug\BLL.dll
+D:\Vs2019 File\Blog\BLL\bin\Debug\BLL.pdb
+D:\Vs2019 File\Blog\BLL\bin\Debug\DAL.dll
+D:\Vs2019 File\Blog\BLL\bin\Debug\Model.dll
+D:\Vs2019 File\Blog\BLL\bin\Debug\DAL.pdb
+D:\Vs2019 File\Blog\BLL\bin\Debug\Model.pdb
+D:\Vs2019 File\Blog\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Vs2019 File\Blog\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Vs2019 File\Blog\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Vs2019 File\Blog\BLL\obj\Debug\BLL.dll
+D:\Vs2019 File\Blog\BLL\obj\Debug\BLL.pdb

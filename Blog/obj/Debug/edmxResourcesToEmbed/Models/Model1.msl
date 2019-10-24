@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+    <EntitySetMapping Name="bSlider">
+      <EntityTypeMapping TypeName="BlogModel.bSlider">
+        <MappingFragment StoreEntitySet="bSlider">
+          <ScalarProperty Name="Picurl" ColumnName="Picurl" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Picintro" ColumnName="Picintro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cSlider">
+      <EntityTypeMapping TypeName="BlogModel.cSlider">
+        <MappingFragment StoreEntitySet="cSlider">
+          <ScalarProperty Name="Picurl" ColumnName="Picurl" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="Picdescribe" ColumnName="Picdescribe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hSlider">
+      <EntityTypeMapping TypeName="BlogModel.hSlider">
+        <MappingFragment StoreEntitySet="hSlider">
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="Etitle" ColumnName="Etitle" />
+          <ScalarProperty Name="Ctitle" ColumnName="Ctitle" />
+          <ScalarProperty Name="EPicdescribe" ColumnName="EPicdescribe" />
+          <ScalarProperty Name="CPicdescribe" ColumnName="CPicdescribe" />
+          <ScalarProperty Name="Pbuttom" ColumnName="Pbuttom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

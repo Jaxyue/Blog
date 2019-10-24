@@ -1,0 +1,6 @@
+D:\Vs2019 File\Blog\DAL\bin\Debug\DAL.dll
+D:\Vs2019 File\Blog\DAL\bin\Debug\DAL.pdb
+D:\Vs2019 File\Blog\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Vs2019 File\Blog\DAL\obj\Debug\DAL.dll
+D:\Vs2019 File\Blog\DAL\obj\Debug\DAL.pdb
+D:\Vs2019 File\Blog\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

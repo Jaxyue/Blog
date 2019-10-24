@@ -1,0 +1,248 @@
+﻿* {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+#Main {
+    height: 100vh;
+    width: 100%;
+}
+
+#left {
+    position:fixed;
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-color: rgba(12,12,12,0.9);
+    color: #fff;
+}
+
+#lHeader {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: #45489a;
+}
+
+#Logo {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    line-height: 18vh;
+    border: 1px solid #fff;
+}
+
+    #Logo > span {
+        font-size: 18px;
+        font: bolder;
+        font-family: Adobe Gothic Std B;
+    }
+
+#lCenter {
+    height: 70vh;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Adobe Heiti Std';
+}
+
+.li {
+    padding-right: 25px;
+}
+
+#lCenter > ul {
+    padding-top: 25vh;
+}
+
+    #lCenter > ul > li {
+        padding: 10px 0;
+        display: list-item;
+    }
+
+#lBottom {
+    text-align: center;
+    font-size: 12px;
+    line-height: 5vh;
+    color: #808080;
+}
+
+#right {
+    float:right;
+    width:75%;
+}
+.Title {
+    position:fixed;
+    height: 5vh;
+    width: 100%;
+    background-color: #45489a;
+}
+.Manage {
+    line-height:5vh;
+}
+.mx-auto {
+    margin-top: 15vh;
+    margin-left: 10%;
+}
+    .mx-auto > h2 {
+        color: #787878;
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+p.banp {
+    margin-top:5%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #999;
+    font-weight: 400;
+}
+p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+.agile-link-bnr {
+    margin-top:2%;
+    padding: 10px 40px;
+    color: #999;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: capitalize;
+    background: none;
+    border: 1px solid #999;
+}
+.gallery {
+    margin-top:10vh;
+    height:160vh;
+    background: #f0f4f4;
+}
+.Projects {
+    padding-top:10vh;
+    margin-left: 10%;
+}
+h3 {
+    font-weight: 400;
+    color: #787878;
+    font-size: 1.5em;
+    letter-spacing: 0.075em;
+    line-height: 1.35em;
+}
+.img-pro {
+    padding-top: 8vh;
+    border-radius: 15px;
+}
+.pimg {
+    width:40%;
+    height:35vh;
+    border-radius:20px;
+    background-color:aqua;
+}
+.pimg:nth-child(1) {
+    float:left;
+}
+    .pimg:nth-child(2) {
+        margin-left:5%;
+        float:left;
+    }
+    .pimg:nth-child(3) {
+        margin-top:5%;
+        float: left;
+    }
+
+    .pimg:nth-child(4) {
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+    .pimg:nth-child(5) {
+        margin-top: 5%;
+        float: left;
+    }
+
+    .pimg:nth-child(6) {
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+.news {
+    padding-top: 10vh;
+    margin-left: 10%;
+    height: 100vh;
+}
+.NewsBox {
+    padding-top:10vh;
+}
+.ManNews {
+    height:70vh;
+    width:40%;
+}
+    .ManNews:nth-child(1) {
+        float: left;
+    }
+
+    .ManNews:nth-child(2) {
+        margin-left: 5%;
+        float: left;
+    }
+
+    .ManNews:nth-child(3) {
+        margin-top: 5%;
+        float: left;
+    }
+
+    .ManNews:nth-child(4) {
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+
+    .ManNews:nth-child(5) {
+        margin-top: 5%;
+        float: left;
+    }
+
+    .ManNews:nth-child(6) {
+        margin-left: 5%;
+        margin-top: 5%;
+        float: left;
+    }
+h4 {
+    letter-spacing: 2px;
+    color: #787878;
+    font-weight: 400;
+    padding: 1em 0 1em 0;
+    font-size: 1.3em;
+    text-align: left;
+}
+.pic {
+    width:100%;
+    height:40vh;
+    background-color:black;
+    border-radius:25px;
+}
+.pText {
+    margin-top:5vh;
+    width: 100%;
+    height: 40vh;
+}

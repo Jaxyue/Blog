@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Blog.dbo.bSlider”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="bSlider">
+    <Key>
+      <PropertyRef Name="Picurl" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="Picintro" />
+    </Key>
+    <Property Name="Picurl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Picintro" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Blog.dbo.cSlider”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="cSlider">
+    <Key>
+      <PropertyRef Name="Picurl" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="Picdescribe" />
+    </Key>
+    <Property Name="Picurl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Picdescribe" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“Blog.dbo.hSlider”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="hSlider">
+    <Key>
+      <PropertyRef Name="item" />
+      <PropertyRef Name="Etitle" />
+      <PropertyRef Name="Ctitle" />
+      <PropertyRef Name="EPicdescribe" />
+      <PropertyRef Name="CPicdescribe" />
+      <PropertyRef Name="Pbuttom" />
+    </Key>
+    <Property Name="item" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Etitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ctitle" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EPicdescribe" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CPicdescribe" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Pbuttom" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="BlogModelStoreContainer">
+    <EntitySet Name="bSlider" EntityType="Self.bSlider" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [bSlider].[Picurl] AS [Picurl], 
+    [bSlider].[Title] AS [Title], 
+    [bSlider].[Date] AS [Date], 
+    [bSlider].[Picintro] AS [Picintro]
+    FROM [dbo].[bSlider] AS [bSlider]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="cSlider" EntityType="Self.cSlider" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [cSlider].[Picurl] AS [Picurl], 
+    [cSlider].[title] AS [title], 
+    [cSlider].[Picdescribe] AS [Picdescribe]
+    FROM [dbo].[cSlider] AS [cSlider]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="hSlider" EntityType="Self.hSlider" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [hSlider].[item] AS [item], 
+    [hSlider].[Etitle] AS [Etitle], 
+    [hSlider].[Ctitle] AS [Ctitle], 
+    [hSlider].[EPicdescribe] AS [EPicdescribe], 
+    [hSlider].[CPicdescribe] AS [CPicdescribe], 
+    [hSlider].[Pbuttom] AS [Pbuttom]
+    FROM [dbo].[hSlider] AS [hSlider]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

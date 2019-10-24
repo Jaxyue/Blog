@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>个人博客管理后台</title>
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="~/css/Bindex.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="Main">
+        <div id="left">
+            <div id="lHeader">
+                <div id="Logo">LIFE&nbsp;<span>TRAVEL</span></div>
+            </div>
+            <div id="lCenter">
+                <ul>
+                    <li class="li">
+                        <a href="~/Backend/Backend">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            首页操作
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Backend/Messagebox">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            留言管理
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="lBottom">
+                <p>Copyright &copy; 2019 Company Name .Design: The Life Travelling</p>
+            </div>
+        </div>
+        <div id="right">
+            <table id="table" class="table table-condensed" name="Hader">
+            </table>
+            <table id="Tb" class="table table-condensed" name="mess"></table>
+        </div>
+        <div style="clear:both"></div>
+
+
+    </div>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/js/Account.js"></script>
+    <script>
+        var j = 0;
+        var list = document.getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++) {
+            list[i].id = i;
+            list[i].onclick = function () {
+                j = this.id;
+                list[j].style.paddingRight = "25px";
+                p = j;
+            }
+        }
+        function changeli() {
+            for (var i = 0; i < list.length; i++) {
+                list.setAttribute("class", "dot");
+            }
+        }
+    </script>
+</body>
+</html>

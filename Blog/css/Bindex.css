@@ -1,0 +1,103 @@
+﻿* {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+}
+
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+#Main {
+    height: 100vh;
+    width: 100%;
+}
+
+#left {
+    position:fixed;
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-color: rgba(12,12,12,0.9);
+    color: #fff;
+}
+
+#lHeader {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: #45489a;
+}
+
+#Logo {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    line-height: 18vh;
+    border: 1px solid #fff;
+}
+
+    #Logo > span {
+        font-size: 18px;
+        font: bolder;
+        font-family: Adobe Gothic Std B;
+    }
+
+#lCenter {
+    height: 70vh;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: 'Adobe Heiti Std';
+}
+
+.li {
+    padding-right: 25px;
+}
+
+#lCenter > ul {
+    padding-top: 25vh;
+}
+
+    #lCenter > ul > li {
+        padding: 10px 0;
+        display: list-item;
+    }
+
+#lBottom {
+    text-align: center;
+    font-size: 12px;
+    line-height: 5vh;
+    color: #808080;
+}
+
+#right {
+    float: right;
+    width: 74%;
+}
+#table {
+    margin-top:5vh;
+    text-align:center;
+}
+#table>tr>th {
+    font-weight:400px;
+    text-align:center;
+    border:1px solid #808080;
+}
+#table > tr>td {
+    color:#9c9595;
+    border:1px solid #808080;
+}
